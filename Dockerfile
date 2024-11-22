@@ -14,7 +14,7 @@ FROM builder as dev-envs
 
 RUN <<EOF
 apt-get update
-apt-get install -y --no-install-recommends git
+apt-get install -y --no-install-recommends git default-mysql-client
 EOF
 
 RUN <<EOF
